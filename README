@@ -1,0 +1,19 @@
+## Network Traffic Analyzer Marina Vassalou csd4138
+
+This network traffic analyzer analyzes IPv4 TCP/UDP NETWORK traffic from a PCAP file passed as a CLI argument
+and prints information regarding each host, which are stored in a struct and are then looped over.
+
+Compilation is done either:
+
+- manually ('gcc analyzer.c utils.c -o security-suite -lpcap') or
+
+- with the provided Makefile ('make')
+
+Similarly, execution is done:
+
+- manually with './security-suite --analyze traffic.pcap 192.168.153.1' (Usage is: './security-suite --analyze <pcap_file> <ip_address>'), or
+
+- using 'make run'
+
+For 'make run', the IP address used for testing is hardcoded as a variable in the Makefile.
+192.168.153.1 is the filter IP used the the Sample Output given in the Assignment's description.
