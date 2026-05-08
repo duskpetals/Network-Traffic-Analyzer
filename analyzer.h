@@ -1,5 +1,6 @@
-#ifndef ANALYZER.H
-#define ANALYZER.H
+#ifndef ANALYZER_H
+#define ANALYZER_H
+
 #include <stdio.h>
 #include <pcap.h>
 
